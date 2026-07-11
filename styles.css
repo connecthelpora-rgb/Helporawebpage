@@ -1,0 +1,518 @@
+
+
+/* Helpora final hero background update */
+.hero, .hero-section, .home-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.88) 38%, rgba(255,255,255,0.54) 62%, rgba(255,255,255,0.24) 100%),
+    url("assets/helpora-hero-good-cause-bg.png") center center / cover no-repeat !important;
+  min-height: 500px;
+}
+
+.hero::before, .hero-section::before, .home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 75% 45%, rgba(255,255,255,0.55), rgba(255,255,255,0.05) 38%, rgba(255,255,255,0) 60%),
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.36));
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero > *, .hero-section > *, .home-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-logo img,
+.hero-brand img,
+.hero-image img,
+.hero .brand-hero-logo,
+.hero-section .brand-hero-logo,
+.home-hero .brand-hero-logo {
+  max-width: 520px !important;
+  width: min(520px, 90vw) !important;
+  height: auto !important;
+}
+
+.hero-logo,
+.hero-brand,
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Decorative brand logo layer for home hero when existing HTML has no hero image container */
+.hero .hero-bg-logo,
+.hero-section .hero-bg-logo,
+.home-hero .hero-bg-logo {
+  width: min(520px, 88vw);
+  height: auto;
+  filter: drop-shadow(0 16px 30px rgba(7,55,127,0.18));
+}
+
+@media (max-width: 900px) {
+  .hero, .hero-section, .home-hero {
+    min-height: auto;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.86)),
+      url("assets/helpora-hero-good-cause-bg.png") center center / cover no-repeat !important;
+  }
+  .hero-logo img,
+  .hero-brand img,
+  .hero-image img,
+  .hero .brand-hero-logo,
+  .hero-section .brand-hero-logo,
+  .home-hero .brand-hero-logo {
+    max-width: 360px !important;
+  }
+}
+
+/* custom hero banner */
+.hero,.hero-section,.home-hero{
+background:
+linear-gradient(rgba(255,255,255,.12),rgba(255,255,255,.12)),
+url('assets/hero-banner.png') center/cover no-repeat !important;
+min-height:500px;
+}
+
+
+/* Mobile: preserve readability instead of cropping the banner */
+@media (max-width: 768px) {
+  .hero-banner-only {
+    overflow-x: auto;
+  }
+
+  .hero-banner-only img {
+    width: 1150px;
+    max-width: none;
+  }
+}
+
+
+
+
+
+/* Smooth transition after the hero */
+.hero-banner-only + section,
+.hero-banner-only + .section {
+  position: relative;
+  margin-top: 0 !important;
+  padding-top: 44px !important;
+}
+
+/* Better desktop display for the wide banner */
+@media (min-width: 1024px) {
+  .hero-banner-only img {
+    min-height: 390px;
+    max-height: 520px;
+    object-fit: cover !important;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .hero-banner-only img {
+    min-height: 300px;
+    object-fit: cover !important;
+  }
+}
+
+/* Mobile: show the left CTA area clearly and avoid tiny unreadable full banner */
+@media (max-width: 640px) {
+  .hero-banner-only {
+    overflow: hidden !important;
+  }
+
+  .hero-banner-only img {
+    width: 190vw !important;
+    max-width: none !important;
+    min-height: 330px;
+    object-fit: cover !important;
+    object-position: 18% center !important;
+  }
+
+  .nav, .navigation, header .container {
+    gap: 10px;
+  }
+}
+
+
+/* Professional full visible Helpora hero banner */
+.hero-banner-only {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  padding: 18px 0 22px !important;
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%) !important;
+  overflow: hidden !important;
+  line-height: 0 !important;
+  box-shadow: 0 14px 38px rgba(7, 55, 127, 0.08);
+}
+
+.hero-banner-only img {
+  display: block !important;
+  width: min(96vw, 1500px) !important;
+  max-width: 96vw !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  border-radius: 30px !important;
+  box-shadow: 0 16px 44px rgba(7, 55, 127, 0.14);
+}
+
+/* Keep the full uploaded banner visible on tablets and phones */
+@media (max-width: 768px) {
+  .hero-banner-only {
+    padding: 10px 0 14px !important;
+    overflow: visible !important;
+  }
+
+  .hero-banner-only img {
+    width: 96vw !important;
+    max-width: 96vw !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 18px !important;
+  }
+}
+
+
+/* Centered hero banner fix */
+.hero-banner-only{
+ display:flex !important;
+ justify-content:center !important;
+ align-items:center !important;
+ width:100% !important;
+ max-width:none !important;
+ margin:0 auto !important;
+ padding:24px 0 !important;
+ background:#fff !important;
+}
+.hero-banner-only img{
+ display:block !important;
+ width:auto !important;
+ max-width:min(1500px,96vw) !important;
+ height:auto !important;
+ margin-left:auto !important;
+ margin-right:auto !important;
+ object-fit:contain !important;
+}
+
+
+/* Helpora NGO eligibility badges and Kalancheri page */
+.eligibility-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 28px 0;
+}
+
+.eligibility-card {
+  background: #fff;
+  border: 1px solid #e6edf5;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 28px rgba(7,55,127,0.06);
+}
+
+.eligibility-card h3 {
+  margin: 0 0 8px;
+  color: #07377f;
+}
+
+.badge-fcra,
+.badge-india-only,
+.badge-review,
+.badge-vedic {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  margin: 4px 6px 10px 0;
+}
+
+.badge-fcra { background: #eaffea; color: #16730c; }
+.badge-india-only { background: #eaf5ff; color: #064fbc; }
+.badge-review { background: #fff6e1; color: #9a6500; }
+.badge-vedic { background: #f4efff; color: #5c2bb5; }
+
+.ngo-detail-hero {
+  background: linear-gradient(135deg, #eef7ff, #fff, #f4fff8);
+  padding: 58px 0;
+}
+
+.ngo-detail-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.ngo-summary-box {
+  background: #fff;
+  border: 1px solid #e6edf5;
+  border-radius: 24px;
+  padding: 26px;
+  box-shadow: 0 16px 40px rgba(7,55,127,.08);
+}
+
+.ngo-summary-box h1 {
+  margin: 0 0 10px;
+  color: #07377f;
+  font-size: clamp(34px, 5vw, 54px);
+}
+
+.ngo-fact-list {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+}
+
+.ngo-fact-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #e6edf5;
+}
+
+.ngo-fact-list li:last-child { border-bottom: 0; }
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.warning-note {
+  background: #fff8e6;
+  border: 1px solid #ffe0a3;
+  color: #6a4600;
+  padding: 16px 18px;
+  border-radius: 16px;
+  margin: 18px 0;
+}
+
+.source-note {
+  font-size: 13px;
+  color: #667085;
+}
+
+@media (max-width: 900px) {
+  .eligibility-strip,
+  .ngo-detail-grid,
+  .pillar-grid,
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Colorful Kalancheri NGO card background */
+.card.kalancheri-feature-card,
+.ngo-card.kalancheri-feature-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(246, 164, 0, 0.28) !important;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.94) 0%, rgba(255,255,255,0.84) 48%, rgba(255,255,255,0.72) 100%),
+    url("assets/kalancheri-card-bg.svg") center center / cover no-repeat !important;
+  box-shadow: 0 18px 44px rgba(246, 164, 0, 0.14), 0 10px 28px rgba(7,55,127,0.08) !important;
+}
+
+.card.kalancheri-feature-card::before,
+.ngo-card.kalancheri-feature-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(67,176,42,.18), transparent 32%),
+    radial-gradient(circle at 90% 88%, rgba(8,168,168,.14), transparent 30%);
+  pointer-events: none;
+}
+
+.card.kalancheri-feature-card > *,
+.ngo-card.kalancheri-feature-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.kalancheri-feature-card h3 {
+  color: #07377f !important;
+}
+
+.kalancheri-feature-card .btn {
+  background: #f6a400 !important;
+  border-color: #f6a400 !important;
+  color: #07377f !important;
+}
+
+.kalancheri-feature-card .badge-india-only {
+  background: #eaf5ff !important;
+  color: #064fbc !important;
+}
+
+.kalancheri-feature-card .badge-vedic {
+  background: #fff4df !important;
+  color: #9a6500 !important;
+}
+
+.kalancheri-feature-card{background:linear-gradient(135deg,#fff8e6,#fff3cf 45%,#eef8ff)!important;border:2px solid #f6c453!important;border-radius:22px;box-shadow:0 16px 32px rgba(246,164,0,.18)}.kalancheri-feature-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(7,55,127,.16)}.kalancheri-feature-card h3{color:#0b4c9c!important}.kalancheri-feature-card .btn{background:#43b02a!important;border-color:#43b02a!important;color:#fff!important}.kalancheri-feature-card .badge-india-only{background:#e8f2ff!important;color:#0b5ed7!important}.kalancheri-feature-card .badge-vedic{background:#fff0d2!important;color:#b26a00!important}
+
+/* Consistent premium NGO directory card design */
+.ngo-card,
+.card.ngo-card,
+.kalancheri-feature-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px !important;
+  border: 1px solid rgba(230, 237, 245, 0.95) !important;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.92)),
+    radial-gradient(circle at top right, rgba(6,79,188,0.12), transparent 36%),
+    radial-gradient(circle at bottom left, rgba(67,176,42,0.10), transparent 34%),
+    #ffffff !important;
+  box-shadow: 0 16px 38px rgba(7, 55, 127, 0.09) !important;
+  padding: 26px !important;
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+.ngo-card:hover,
+.card.ngo-card:hover,
+.kalancheri-feature-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(6,79,188,0.24) !important;
+  box-shadow: 0 24px 48px rgba(7, 55, 127, 0.14) !important;
+}
+
+.ngo-card::before,
+.card.ngo-card::before,
+.kalancheri-feature-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7px;
+  width: 100%;
+  background: linear-gradient(90deg, #064fbc, #43b02a, #f6a400);
+}
+
+.ngo-card > *,
+.card.ngo-card > *,
+.kalancheri-feature-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.ngo-card h3,
+.card.ngo-card h3,
+.kalancheri-feature-card h3 {
+  color: #07377f !important;
+  font-size: 22px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.ngo-card p,
+.card.ngo-card p,
+.kalancheri-feature-card p {
+  color: #475467;
+}
+
+.ngo-card .btn,
+.card.ngo-card .btn,
+.kalancheri-feature-card .btn {
+  background: #064fbc !important;
+  border-color: #064fbc !important;
+  color: #ffffff !important;
+  border-radius: 999px !important;
+  box-shadow: 0 10px 22px rgba(6,79,188,0.18);
+}
+
+.ngo-card .btn:hover,
+.card.ngo-card .btn:hover,
+.kalancheri-feature-card .btn:hover {
+  background: #43b02a !important;
+  border-color: #43b02a !important;
+}
+
+.badge,
+.badge-fcra,
+.badge-india-only,
+.badge-review,
+.badge-vedic {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 13px;
+  font-weight: 800;
+  margin: 4px 6px 12px 0;
+}
+
+.badge-fcra {
+  background: #eaffea !important;
+  color: #16730c !important;
+}
+
+.badge-india-only {
+  background: #eaf5ff !important;
+  color: #064fbc !important;
+}
+
+.badge-review,
+.badge.orange {
+  background: #fff6e1 !important;
+  color: #9a6500 !important;
+}
+
+.badge-vedic {
+  background: #f4efff !important;
+  color: #5c2bb5 !important;
+}
+
+/* Cause-specific subtle accents, while keeping same card design */
+.ngo-card[data-cause="education"]::before { background: linear-gradient(90deg, #064fbc, #43b02a); }
+.ngo-card[data-cause="healthcare"]::before { background: linear-gradient(90deg, #064fbc, #08a8a8); }
+.ngo-card[data-cause="vedic"]::before { background: linear-gradient(90deg, #f6a400, #6b3bd2); }
+.ngo-card[data-cause="food"]::before { background: linear-gradient(90deg, #f6a400, #43b02a); }
+
+/* Unified NGO cards */
+.ngo-grid,.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:28px}
+.ngo-card{
+display:flex!important;
+flex-direction:column;
+padding:0!important;
+overflow:hidden!important;
+min-height:620px;
+background:#fff!important;
+border-radius:26px!important;
+border:1px solid #e8edf5!important;
+box-shadow:0 18px 42px rgba(7,55,127,.10)!important;
+}
+.ngo-card .card-image,.ngo-card .ngo-image{
+height:220px;
+background:linear-gradient(135deg,#eef8ff,#fff6df);
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+}
+.nggo-card .card-image img,.ngo-card .ngo-image img{width:100%;height:100%;object-fit:cover}
+.ngo-card .card-body,.ngo-card .content{padding:24px;display:flex;flex-direction:column;flex:1}
+.ngo-card h3{font-size:2rem!important;margin:8px 0 12px}
+.ngo-card p{line-height:1.6}
+.ngo-card .actions,.ngo-card .button-group{margin-top:auto;display:flex;gap:12px;flex-wrap:wrap}
+.ngo-card .btn{border-radius:14px!important;padding:12px 18px!important}
+
+/* Center hero banner */
+.hero,.hero-section{display:flex;justify-content:center}.hero .container,.hero-section .container{display:flex;justify-content:center}.hero img,.hero-banner,.banner-image,.hero-image img{display:block;margin:0 auto;max-width:1400px;width:100%;height:auto;object-fit:contain;}

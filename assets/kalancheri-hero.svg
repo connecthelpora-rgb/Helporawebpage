@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#fff6df"/><stop offset="1" stop-color="#eef7ff"/></linearGradient></defs>
+<rect width="900" height="450" fill="url(#g)"/>
+<circle cx="120" cy="90" r="60" fill="#f6a400" opacity=".25"/>
+<circle cx="760" cy="320" r="80" fill="#43b02a" opacity=".18"/>
+<text x="450" y="110" text-anchor="middle" font-size="34" font-family="Arial" fill="#07377f" font-weight="700">Sri Veda Vidya Gurukulam</text>
+<text x="450" y="150" text-anchor="middle" font-size="22" font-family="Arial" fill="#666">Kalancheri • Vedic Education • Gho Samrakshanam</text>
+<text x="200" y="250" font-size="96">🕉️</text>
+<text x="380" y="255" font-size="96">📖</text>
+<text x="580" y="255" font-size="96">🐄</text>
+<text x="450" y="360" text-anchor="middle" font-size="24" font-family="Arial" fill="#555">Preserving Vedas • Cow Protection • Rishi Krishi</text>
+</svg>

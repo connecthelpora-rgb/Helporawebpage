@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#fff7df"/>
+    <stop offset="0.42" stop-color="#fff1c2"/>
+    <stop offset="1" stop-color="#eaf8ff"/>
+  </linearGradient>
+  <radialGradient id="sun" cx=".18" cy=".18" r=".45">
+    <stop offset="0" stop-color="#ffb703" stop-opacity=".62"/>
+    <stop offset="1" stop-color="#ffb703" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<rect width="900" height="520" rx="38" fill="url(#bg)"/>
+<rect width="900" height="520" rx="38" fill="url(#sun)"/>
+<circle cx="756" cy="92" r="86" fill="#43b02a" opacity=".13"/>
+<circle cx="805" cy="430" r="120" fill="#08a8a8" opacity=".10"/>
+<path d="M0 410 C160 350 260 470 430 400 C585 336 700 390 900 330 L900 520 L0 520 Z" fill="#064fbc" opacity=".09"/>
+<path d="M0 450 C190 390 300 500 470 435 C650 365 760 420 900 370 L900 520 L0 520 Z" fill="#43b02a" opacity=".10"/>
+
+<!-- temple/gurukulam icon -->
+<g transform="translate(96 105)">
+  <path d="M120 0 L230 58 L10 58 Z" fill="#f6a400"/>
+  <rect x="38" y="58" width="164" height="142" rx="12" fill="#ffffff" opacity=".86"/>
+  <rect x="62" y="95" width="28" height="105" fill="#07377f" opacity=".88"/>
+  <rect x="106" y="95" width="28" height="105" fill="#07377f" opacity=".88"/>
+  <rect x="150" y="95" width="28" height="105" fill="#07377f" opacity=".88"/>
+  <rect x="25" y="200" width="190" height="22" rx="10" fill="#f6a400"/>
+  <path d="M42 235 h156" stroke="#07377f" stroke-width="12" stroke-linecap="round" opacity=".85"/>
+</g>
+
+<!-- cow icon -->
+<g transform="translate(560 145)" opacity=".94">
+  <ellipse cx="118" cy="94" rx="104" ry="58" fill="#ffffff"/>
+  <circle cx="38" cy="76" r="38" fill="#ffffff"/>
+  <path d="M19 42 L-8 12 M58 42 L82 12" stroke="#f6a400" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="25" cy="72" r="5" fill="#07377f"/>
+  <path d="M104 132 v52 M162 132 v52 M72 128 v48 M198 120 v46" stroke="#07377f" stroke-width="12" stroke-linecap="round"/>
+  <path d="M217 82 C252 66 264 92 238 112" stroke="#07377f" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <circle cx="125" cy="82" r="20" fill="#43b02a" opacity=".20"/>
+  <circle cx="170" cy="105" r="18" fill="#064fbc" opacity=".14"/>
+</g>
+
+<!-- decorative Sanskrit-like manuscript lines -->
+<g opacity=".18" stroke="#07377f" stroke-width="8" stroke-linecap="round">
+  <path d="M92 382 h252"/>
+  <path d="M92 416 h188"/>
+  <path d="M92 450 h230"/>
+</g>
+</svg>
